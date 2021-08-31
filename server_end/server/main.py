@@ -25,6 +25,15 @@ static_path = os.path.abspath(
     )
 )
 
+
+template_path = os.path.abspath(
+    os.path.join(
+        os.path.dirname(__file__),
+        "./templates"
+    )
+)
+
+
 if __name__ == "__main__":
     host = "0.0.0.0"
     parse_command_line()
@@ -35,6 +44,7 @@ if __name__ == "__main__":
     settings = {
         'debug': options.debug,
         'static_path': static_path,
+        'template_path': template_path,
         "login_url": "/login",
         "cookie_secret": "s632504c51d6456781cdf903dcfeeerf"
     }
