@@ -10,6 +10,7 @@ sys.path.insert(0, os.path.join(PROJECT_ROOT, os.pardir))
 
 from server_end.server.api import wedding_api
 from server_end.server.api import test
+from server_end.server.api import error
 
 
 class BaseHandler(RequestHandler):
@@ -35,5 +36,8 @@ Routers = [
 
     # 测试
     url(r"/api/test", test.ApiTest),
+
+    # 404路由
+    url(r".*", error.NotFoundHandler),
 
 ]
