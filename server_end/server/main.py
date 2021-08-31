@@ -8,6 +8,9 @@ import os
 import sys
 PROJECT_ROOT = os.path.realpath(os.path.dirname(__file__))
 sys.path.insert(0, os.path.join(PROJECT_ROOT, os.pardir))
+sys.path.append(os.path.abspath(os.path.join(os.path.abspath(__file__), '../../')))
+sys.path.append(os.path.abspath(os.path.join(os.path.abspath(__file__), '../../..')))
+sys.path.append(os.path.abspath(os.path.join(os.path.abspath(__file__), '../../../..')))
 
 from server_end.server.routers import Routers
 from server_end.server.common.util import is_test
