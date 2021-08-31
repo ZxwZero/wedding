@@ -31,15 +31,6 @@ PASSWORD = ''
 
 
 # 连接数据连接 URL
-db_url_test = 'mysql+pymysql://{}:{}@{}:{}/{}?charset=utf8'.format(
-    USERNAME,
-    PASSWORD,
-    HOSTNAME,
-    PORT,
-    DATABASE,
-
-)
-
 db_url_prod = 'mysql+pymysql://{}:{}@{}:{}/{}?charset=utf8'.format(
     USERNAME,
     PASSWORD,

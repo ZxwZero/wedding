@@ -79,15 +79,6 @@ def sort_keys(params, salt=None):
     return "&".join(_keys)
 
 
-def save_file(foder, tail, image, decode):
-    if get_platform() == "Darwin":
-        with open('/Users/fanjr/Desktop/%s/%s_%s.jpeg' % (foder, str(get_ts()),tail ), 'wb') as fd:
-            if decode:
-                fd.write(base64.b64decode(image))
-            else:
-                fd.write(image)
-
-
 if __name__ == "__main__":
     print(PROJECT_ROOT)
     # read_from_xlsx()
