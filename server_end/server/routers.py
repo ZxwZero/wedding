@@ -9,7 +9,7 @@ PROJECT_ROOT = os.path.realpath(os.path.dirname(__file__))
 sys.path.insert(0, os.path.join(PROJECT_ROOT, os.pardir))
 
 from server_end.server.api import wedding_api
-
+from server_end.server.api import test
 
 
 class BaseHandler(RequestHandler):
@@ -33,5 +33,7 @@ Routers = [
     # 接口路径
     url(r"/api/wedding_add", wedding_api.ApiWeddingAddUser),
 
+    # 测试
+    url(r"/api/test", test.ApiTest),
 
 ]
