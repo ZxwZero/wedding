@@ -8,3 +8,5 @@ run_tornado() {
 cd /data/app/wedding
 git pull
 run_tornado
+
+/usr/local/nginx/sbin/nginx -s reload
