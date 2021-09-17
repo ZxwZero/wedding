@@ -50,7 +50,7 @@ def mk_qr(url, icon_path, save_path):
 
 if __name__ == '__main__':
     # sale_url = "http://10.220.32.154:9000"  # 本地
-    sale_url = "http://1.117.213.193"  # 线上
+    sale_url = "http://zxw-wedding.cn"  # 线上
     icon_img = './files/wedding_logo.jpg'  # 中间图标
     qr_code_img = "./files/wedding.png"  # 生成的二维码图片
     mk_qr(sale_url, icon_img, qr_code_img)
